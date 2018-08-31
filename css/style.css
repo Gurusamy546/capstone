@@ -1,0 +1,386 @@
+/*un wanted*/
+body{
+    font-family: 'Roboto', sans-serif;
+}
+/*
+div{
+    border: 1px solid black;
+}*/
+header{
+    height: 32px;
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+    margin: 24px;
+    font-weight: bold;
+}
+header span{
+    text-decoration: none;
+    font-weight: lighter;
+    flex-grow: 1;
+}
+
+ul{
+    display: flex;
+    text-align: right;
+    color: gray;
+}
+ul li{
+    margin-left: 16px;
+}
+/*banner*/
+.banner{
+    background-color: gainsboro;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    
+}
+.banner img{
+    width: 60%;
+    
+    margin: 32px 24px;
+}
+.banner .content{
+    width: 40%;
+    line-height: 1.1; 
+}
+.content p {
+    font-size: 40px;
+    margin: 0;
+    margin-bottom: 32px;
+}
+.content span{
+    color: white;
+    background-color: darkgray;
+    margin: 24px;
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 40px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+.content h1{
+    font-weight: bold;
+    font-size: 40px;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+/*learning*/
+.learning{
+    display: flex;
+    background-color: whitesmoke;
+}
+.book img{
+    /*width: 60%;*/
+    height: 400px;
+}
+.book{
+    width: 60%;
+    line-height: 1.2;
+}
+.book .set img{
+    width: 100%;
+}
+.book h1{
+    font-size: 28px;
+    margin-top: 32px;
+    
+
+}
+.book p{
+    margin: 0;
+    margin-top: 24px;
+}
+.time {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.book{
+    width: 60%;
+    margin: 24px;
+}
+.ori{
+    display: flex;
+    align-items: center;
+    
+    border: 1px solid gainsboro;
+}
+.photo{
+    width: 35%;
+    margin: 16px;
+}
+.photo img{
+    width: 100%;
+    height: auto;
+}
+.gust{
+    background-color: gainsboro;
+}
+.venue{
+    width: 65%;
+    line-height: 1.5;
+}
+.venue h3{
+    font-size: 28px;
+    font-weight: bold;
+}
+.venue a{
+    text-decoration: none;
+}
+.venue p{
+    font-size: 18px;
+    margin: 0;
+}
+/*container*/
+.container {
+    /* display: flex; */
+    /* margin: 72px 24px; */
+    background-color: gainsboro;
+    /* justify-content: space-around; */
+}
+.images {
+    /* margin: 24px; */
+    display: flex;
+    justify-content: space-between;
+}
+.back {
+    /* width: 100%; */
+    margin: 0px 72px;
+   
+}
+.container h2 {
+    font-size: 38px;
+    text-align: center;
+    /* margin-top: 32px; */
+    font-weight: bold;
+    padding: 32px;
+}
+/*child*/
+.child {
+    margin-right: 32px;
+    margin-bottom: 32px;
+    background-color: white;
+}
+.child img {
+    width: 100%;
+}
+.software{
+    margin-left: 0;
+}
+.right{
+    margin-right: 0;
+}
+/*content of child*/
+.child h3,h4,p{
+    margin: 16px 32px;
+}
+.child h4,p{
+    color: gray;
+}
+.child h4{
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-size: 18px;
+
+}
+.child h3{
+    font-size: 22px;
+    font-weight: bold;
+}
+/*head*/
+.head h1{
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    padding: 32px;
+}
+.details{
+    display: flex;
+    
+    
+}
+.details h2{
+    font-size: 28px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+/*videos*/
+.head{background-color: whitesmoke;}
+.videos{
+    width: 60%;
+    padding: 24px;
+    padding-top: 0px;
+}
+.col{
+    background-color: gainsboro;
+}
+.videos h1{
+    font-size: 22px;
+    margin-top: 24px;
+}
+.videos p{
+    margin-left: 0;
+    line-height: 1.2;
+}
+.videos video{
+    height: auto;
+    width: 100%;
+}
+
+.notes{
+    width: 40%;
+}
+.divide{
+    display: flex;
+    align-items: center;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+    border-top: 1px solid gainsboro;
+    box-shadow: 2px gray;
+    
+}
+footer p{
+    flex-grow: 1;
+}
+/* for mobiles*/
+@media only screen and (min-width:720px){
+.mobile{
+    display: none;
+    
+}
+.Start{
+    display: none;
+}
+
+}
+
+/*media query*/
+@media only screen and (max-width:720px){
+    .banner{
+        flex-direction: column;
+    }
+    .mobile{
+        display: flex;
+        justify-content: space-around;
+        
+    }
+    .Desktop{
+        display: none;
+    }
+    .ori{
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 32px;
+        border: none;
+    }
+    .venue{
+        margin: 16px;
+        margin-bottom: 0;
+        width: 90%;
+    }
+    .gust{
+        background-color: whitesmoke;
+    }
+    .photo{
+        width: 100%;
+        margin: 0;
+        
+    }
+    .banner img{
+        width: 100%;
+        margin: 0;
+    }.content{
+        margin: 32px auto 32px 16px;
+    }
+    .content h1{
+        font-size: 32px;
+        margin-bottom: 32px; 
+    }
+    .content p{
+        font-size: 28px;
+        margin-bottom: 24px;
+    }
+    .content span{
+        font-size: 30px;
+    }
+    .banner .content{
+        width: 90%;
+    }
+    .header{
+        display: none;
+    }
+    .book{
+        display: none;
+        
+    }
+    .time{
+        width: 100%;
+        border-bottom: 1px solid gainsboro;
+    }
+    .container{
+        display: none;
+    }
+    .notes{
+        display: none;
+    }
+}
+.Start{
+    background-color: ghostwhite;
+}
+.courses {
+    font-weight: bold;
+    padding: 16px;
+    padding-bottom: 32px;
+}
+.courses h2{
+    padding: 16px 0px 24px 16px;
+    
+    background-color: gainsboro;
+    color: black;
+    margin-bottom: 8px;
+}
+@media only screen and (max-width: 350px){
+    body{
+        font-size: 12px;
+    }
+    h1{font-size: 20px;}
+}
+@media only screen and (max-width:720px){
+    .Start h1{
+        text-align: center;
+        font-size: 28px;
+        padding-top: 18px;
+    }
+    /*video*/
+    .head h1{
+        padding-bottom: 16px;
+        padding-top: 16px;
+    }
+    .videos{
+        width: 100%;
+    }
+    .videos h1{
+        display: none;
+    }
+    .videos p{
+        display: none;
+    }
+    /*footer*/
+    footer ul{
+        display: none;
+        text-align: center;
+    }
+}
+
